@@ -8,7 +8,7 @@
     </div>
 
     <!-- Sidebar -->
-    <Sidebar class="sm:w-[80px] sm:h-screen w-screen h-[80px] fixed bottom-0 bg-[#f3f6fc] sm:bottom-auto sm:top-0 sm:order-1"/>
+    <Sidebar class="sm:w-[80px] sm:h-screen w-screen h-[80px] fixed bottom-0 bg-[#f3f6fcd2] backdrop-blur-lg sm:bottom-auto sm:top-0 sm:order-1"/>
 
     <!-- Noise Effect -->
     <NoiseEffect/>
