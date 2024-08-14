@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap');
+
+.noto-nastaliq {
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Inter';
+}
