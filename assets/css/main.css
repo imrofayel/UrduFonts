@@ -12,6 +12,16 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'Mehr';
+  src: url('/fonts/Mehr_Nastaliq_2.0/Mehr_Nastaliq_2.0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Khat-e-Musarat';
+  src: url('/fonts/Khat-e-Musarat.otf') format('opentype');
+}
+
 * {
     font-family: 'Inter';
 }

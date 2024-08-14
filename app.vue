@@ -1,12 +1,16 @@
 <template>
-  <div class="flex sm:flex-row flex-col w-full text-[#3c4043] blur-[.28px]" style="direction: rtl;">
-    <Sidebar class="bg-[#f3f6fc] basis-[6%] min-w-[80px] h-screen order-2 sm:order-1"/>
+  <div class="flex flex-col sm:flex-row" style="direction: rtl;">
+    <!-- Main Content -->
+    <div class="flex-grow sm:mr-[80px] mb-[100px] sm:mb-0 order-2 sm:order-2">
+      <NuxtLayout>
+        <NuxtPage/>
+      </NuxtLayout>
+    </div>
 
-    <NuxtLayout class="order-1 sm:order-2 w-full">
-      <NuxtPage class="basis-[92%] h-full w-full"/>
-    </NuxtLayout>
+    <!-- Sidebar -->
+    <Sidebar class="sm:w-[80px] sm:h-screen w-screen h-[80px] fixed bottom-0 bg-[#f3f6fc] sm:bottom-auto sm:top-0 sm:order-1"/>
 
+    <!-- Noise Effect -->
     <NoiseEffect/>
-
   </div>
 </template>

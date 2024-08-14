@@ -37,7 +37,7 @@ function onSelect(option: { click: () => void; to: string | RouteLocationAsRelat
 </script>
 
 <template>
-  <div class="basis-[25%]">
+  <div class="basis-[40%] sm:basis-[45%] md:basis-[35%]">
 
     <div class="h-16 bg-[#f3f6fc] rounded-full flex items-center p-6 hover:scale-110 duration-500 ease-in-out" @click="isOpen = true">
       <Icon name="lucide:search" size="24px"></Icon>
