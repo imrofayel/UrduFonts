@@ -1,6 +1,6 @@
 <template>
 
-  <div>
+  <div class="blur-[.3px]">
 
     <div class="flex mx-10"><Icon name="lucide:pen-line" size="24px"></Icon><input type="text" v-model="text" class="mr-2 leading-[4rem] overflow-visible relative -top-6 noto-nastaliq text-[20px] w-full text-[#1a1c1e] focus:outline-none focus:ring-0 placeholder:text-[#1a1c1e]" placeholder=" الفاظ  یہاں تحریر کریں"></div>
       

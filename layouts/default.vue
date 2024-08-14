@@ -1,5 +1,5 @@
 <template>
-  <div class="blur-[0.3px]">
+  <div>
     <Header/>
     <main class="pt-[145px]"><slot/></main>
   </div>
