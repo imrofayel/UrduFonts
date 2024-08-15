@@ -6,14 +6,14 @@
       
     <div v-for="font in formattedData" :key="font.family">
 
-    <div class="mx-8 space-y-4 hover:bg-[#f3f6fc] p-2 pb-10 rounded-3xl hover:scale-[1.03] duration-500 ease-in-out">
+    <NuxtLink :to="font.path"><div class="mx-8 space-y-4 hover:bg-[#f3f6fc] p-2 pb-10 rounded-3xl hover:scale-[1.03] duration-500 ease-in-out">
 
-      <div class="text-lg rounded-3xl bg-[#1a1c1e] p-3 py-1 text-[#ffff] inline-block">{{ font.title }}</div>
+      <div class="text-lg inter rounded-3xl bg-[#1a1c1e] p-3 py-1 text-[#ffff] inline-block">{{ font.title }}</div>
 
       <div :style="{ fontSize: font.size, fontFamily: font.family }">{{ text.length == 0 ? 'اردو ہے جس کا نام ہمیں جانتے ہیں داغ' : text }}
       </div>
 
-    </div>
+    </div></NuxtLink>
 
     </div>
 
@@ -37,7 +37,7 @@ const formattedData = computed(() => {
   }) || []
 })
 
-const text = ref('اردو ہے جس کا نام ہمیں جانتے ہیں داغ​');
+const text = ref('');
 
 </script>
 
