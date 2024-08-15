@@ -32,7 +32,15 @@ definePageMeta({
 
   <div class="blur-[.3px] flex-col text-4xl mx-10 overflow-visible py-2 justify-between text-[#1a1c1e] space-y-8">
 
-    <div>{{ data.urdu }}</div>
+    <div class="flex justify-between">
+      
+      <div>{{ data.urdu }}</div>
+
+      <div class="flex"><p class="hover:scale-105 ease-in-out duration-500 flex items-center bg-[#1a1c1e] text-[#ffff] p-3 py-0 rounded-3xl" style="direction: ltr;"><Icon name="lucide:code" size="23px"></Icon><div class="inter relative px-2 pr-1 text-[19px] mehr">Web</div></p>
+
+      <a href="https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Mehr_Nastaliq_2.0/Mehr_Nastaliq_2.0.ttf" ><p class="hover:scale-105 ease-in-out duration-500 flex items-center bg-[#1a1c1e] text-[#ffff] p-2 mx-1.5 py-0 rounded-3xl" style="direction: ltr;"><Icon name="lucide:arrow-down" size="23px"></Icon><div class="inter relative px-1 text-[19px] mehr">Download</div></p></a></div>
+
+    </div>
 
     <div class="text-4xl leading-loose flex justify-center pb-4 text-center" :style="{ fontFamily: data.family }">اردو ہے جس کا نام ہمیں جانتے ہیں داغ​
       <br> سارے جہاں میں دھوم ہماری زباں کی ہے </div>
