@@ -3,6 +3,6 @@ export interface Font {
     family: string
     urdu: string
     styles: string[]
-    size: string
+    size: number
   }
   

@@ -10,7 +10,7 @@
 
       <div class="text-lg inter rounded-3xl bg-[#1a1c1e] p-3 py-1 text-[#ffff] inline-block">{{ font.title }}</div>
 
-      <div :style="{ fontSize: font.size, fontFamily: font.family }">{{ text.length == 0 ? 'اردو ہے جس کا نام ہمیں جانتے ہیں داغ' : text }}
+      <div :style="{ fontSize: font.size + 'px', fontFamily: font.family }">{{ text.length == 0 ? 'اردو ہے جس کا نام ہمیں جانتے ہیں داغ' : text }}
       </div>
 
     </div></NuxtLink>
@@ -32,7 +32,7 @@ const formattedData = computed(() => {
       title: articles.title || 'no-title available',
       family: articles.family || 'no-family available',
       styles: articles.styles || [],
-      size: articles.size || '26px'
+      size: articles.size || 26
     }
   }) || []
 })

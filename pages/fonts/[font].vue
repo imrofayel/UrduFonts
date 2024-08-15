@@ -20,7 +20,7 @@ const data = computed<Font>(() => {
 
 const text = ref('')
 
-const value = ref(36)
+const value = ref(Number(data.value.size))
 
 definePageMeta({
   layout: 'default'
@@ -34,7 +34,7 @@ definePageMeta({
 
     <div>{{ data.urdu }}</div>
 
-    <div class="text-4xl leading-loose flex justify-center pb-4 text-center">اردو ہے جس کا نام ہمیں جانتے ہیں داغ​
+    <div class="text-4xl leading-loose flex justify-center pb-4 text-center" :style="{ fontFamily: data.family }">اردو ہے جس کا نام ہمیں جانتے ہیں داغ​
       <br> سارے جہاں میں دھوم ہماری زباں کی ہے </div>
 
     <div class="flex-row sm:flex-col my-12 mx-2 items-center space-y-6"><div class="sm:w-1/2 flex bg-[#f3f6fc] p-1 rounded-full mb-12"><input type="text" v-model="text" class="w-full mr-4 mb-1 leading-[4rem] overflow-visible noto-nastaliq text-[20px] bg-transparent focus:outline-none focus:ring-0 placeholder:text-[#1a1c1e]" placeholder="الفاظ  یہاں تحریر کریں">
@@ -78,8 +78,12 @@ definePageMeta({
     <div v-for="(style) in data.styles" :key="style" v-if="data.styles.length >= 1">
       <div class="inter text-lg rounded-3xl bg-[#1a1c1e] p-3 py-1 text-[#ffff] inline-block">{{ style }}</div>
 
-      <div class="mt-10 mb-8 leading-relaxed" :style="{ fontSize: value + 'px', fontWeight: style.split(' ')[1], fontFamily: data.family }">{{ text.length == 0 ? data.urdu + ' اردو کا ایک فوںٹ ہے' : text }}</div>
+      <div class="mt-10 mb-8 leading-relaxed" :style="{ fontSize: value + 'px', fontWeight: style.split(' ')[1], fontFamily: data.family }">{{ text.length == 0 ? data.urdu + ' اردو کا ایک فونٹ ہے' : text }}</div>
     </div>
+
+    <div class="bg-[#f3f6fc] p-4 pb-8 space-y-4 rounded-2xl"><p class="flex items-center"><img src="/assets/flower.svg" class="inline"><div class="p-4 pb-6 text-[26px] mehr">تمام حروف کا صرف ذیلی سیٹ یہاں دکھایا گیا ہے۔</div></p>
+
+    <Alphabets :font="data.family" :size="data.size"/></div>
 
   </div>
 
