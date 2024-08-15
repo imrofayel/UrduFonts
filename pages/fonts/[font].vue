@@ -30,7 +30,7 @@ definePageMeta({
 
 <template>
 
-  <div class="blur-[.3px] flex-col text-5xl mx-10 overflow-visible py-2 justify-between text-[#1a1c1e] space-y-8">
+  <div class="blur-[.3px] flex-col text-4xl mx-10 overflow-visible py-2 justify-between text-[#1a1c1e] space-y-8">
 
     <div>{{ data.urdu }}</div>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Header/>
-    <main class="pt-[145px]"><slot/></main>
+    <Header class="mr-[25px] py-[20px]"/>
+    <main class="pt-[120px]"><slot/></main>
   </div>
 </template>
 
