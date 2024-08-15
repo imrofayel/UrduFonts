@@ -6,26 +6,49 @@ const isOpen = ref(false);
 const commandPaletteRef = ref();
 const router = useRouter();
 
-const pages = [
-  { id: 'adamrofayel', label: 'Adam Rofayel', href: 'https://github.com/imrofayel', target: '_blank' },
-];
-
-const actions = [
-  { id: 'jameel_noori_nastaliq', label: 'جمیل نوری نستعلیق', click: () => {} },
-  { id: 'opensource', label: 'Open Source Projects', click: () => {} },
-];
-
-const groups = computed(() =>
-  [commandPaletteRef.value?.query ? {
-    key: 'pages',
-    commands: pages
-  } : {
-    key: 'actions',
-    commands: actions
-  }].filter(Boolean)
+// Fetch font data using useAsyncData
+const { data } = await useAsyncData('fonts', () =>
+  queryContent('/fonts').sort({ _id: -1 }).find()
 );
 
-function onSelect(option: { click: () => void; to: string | RouteLocationAsRelativeGeneric | RouteLocationAsPathGeneric; href: string | URL | undefined; }) {
+// Transform the data into the desired pages format
+const pages = computed(() => {
+  // Ensure data.value is an array, map over the array to format each entry
+  return data.value?.map((font) => ({
+    id: font.family || 'no-family',
+    label: font.urdu || 'no-title',
+    href: font._path || '#'
+  })) || [];
+});
+
+// Actions array for non-search commands
+const actions = [
+  { id: 'jameel_noori_nastaliq', label: 'جمیل نوری نستعلیق', click: () => { console.log('Action clicked'); } },
+];
+
+// Groups computed property for organizing commands
+const groups = computed(() => {
+  if (commandPaletteRef.value?.query) {
+    // If there's a query, show pages
+    return [
+      {
+        key: 'pages',
+        commands: pages.value,
+      },
+    ];
+  } else {
+    // Otherwise, show actions
+    return [
+      {
+        key: 'actions',
+        commands: actions,
+      },
+    ];
+  }
+});
+
+// Function to handle option selection
+function onSelect(option: { click?: () => void; to?: string | RouteLocationAsRelativeGeneric | RouteLocationAsPathGeneric; href?: string | URL }) {
   if (option.click) {
     option.click();
   } else if (option.to) {
@@ -48,57 +71,71 @@ function onSelect(option: { click: () => void; to: string | RouteLocationAsRelat
       <UCommandPalette
         ref="commandPaletteRef"
 
+        style="direction: rtl;"
+
+        placeholder="تلاش کریں"
+
         :fuse="{
           fuseOptions: {
             ignoreLocation: true,
-            includeMatches: true,
+            includeMatches: false,
             threshold: 0,
-            keys: ['title', 'description', 'children.children.value', 'children.children.children.value']
+            keys: ['id', 'lable', 'children.children.value', 'children.children.children.value']
           },
-          resultLimit: 10,
+          resultLimit: 300,
         }"
 
         :groups="groups"
         :autoselect="false"
         @update:model-value="onSelect"
 
-        class="blur-[0.25px] text-lg"
+        class="blur-[0.3px] text-xl"
         
-        :ui="{
-            input: {
+        :ui="{   
+          
+          input: {
               icon: {
-                base: 'pointer-events-none absolute start-4 opacity-80',
+                base: 'pointer-events-none absolute start-4 text-[#1a1c1e]',
+                size: 'h-6 w-6',
               },
+              base: 'placeholder-[#1a1c1e]',
+              size: 'sm:text-[21px]',
             },
             group: {
               wrapper: 'p-2',
-              label: 'px-2.5 my-2 text-lg text-gray-900 dark:text-white',
-              container: 'noto-nastaliq text-lg text-gray-700 dark:text-gray-200',
+              label: 'px-2.5 my-2 text-2xl text-[#1a1c1e] dark:text-white',
+              container: 'text-[21px] text-[#1a1c1e] dark:text-gray-200 leading-loose',
               command: {
                 base: 'flex justify-between select-none items-center rounded-md px-2.5 py-1.5 gap-2 relative',
-                active: 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white',
+                active: 'bg-[#f3f6fc] dark:bg-gray-800 text-[#1a1c1e] dark:text-white',
                 inactive: '',
                 label: 'flex items-center gap-1.5 min-w-0',
                 prefix: 'text-gray-800 dark:text-gray-500',
                 suffix: 'text-gray-400 dark:text-gray-500',
                 container: 'flex items-center gap-1.5 min-w-0',
                 icon: {
-                  base: 'flex-shrink-0 w-5 h-5',
-                  active: 'text-gray-700 dark:text-white',
-                  inactive: 'text-gray-700 dark:text-gray-500',
+                  base: 'flex-shrink-0 w-8 h-8',
+                  active: 'text-[#1a1c1e] dark:text-white',
+                  inactive: 'text-[#1a1c1e] dark:text-gray-500',
                 },
                 selectedIcon: {
-                  base: 'h-5 w-5 text-gray-800 dark:text-white flex-shrink-0',
+                  base: 'h-5 w-5 text-[#1a1c1e] dark:text-white flex-shrink-0',
                 },
               },
-              active: 'flex-shrink-0 text-gray-800 dark:text-gray-400',
-              inactive: 'flex-shrink-0 text-gray-800 dark:text-gray-400',
-            } }"
+              active: 'flex-shrink-0 text-[#1a1c1e] dark:text-gray-400',
+              inactive: 'flex-shrink-0 text-[#1a1c1e] dark:text-gray-400',
+            },
+            
+            default: {
+              icon: 'i-lucide-search',
+            },
+            
+          }"
         >   
         
         <template #empty-state>
           <div class="flex flex-col items-center justify-center py-6 gap-3">
-            <span class="text-gray-800 opacity-85 noto-nastaliq">فونٹ نہیں مل سکا</span>
+            <span class="text-[#1a1c1e] text-2xl">فونٹ نہیں مل سکا</span>
           </div>
         </template>
 
