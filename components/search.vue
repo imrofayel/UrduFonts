@@ -64,7 +64,7 @@ function onSelect(option: { click?: () => void; to?: string | RouteLocationAsRel
 
     <div class="h-16 bg-green-50 dark:bg-[#1c2c28] backdrop-blur-lg rounded-full flex items-center p-6 hover:scale-110 duration-500 ease-in-out" @click="isOpen = true">
       <Icon name="lucide:search" size="24px"></Icon>
-      <div class="relative -top-1 pr-4 text-[22px]">تلاش کریں</div>
+      <div class="relative top-1 pr-4 text-[22px]">تلاش کریں</div>
     </div>
 
     <UModal v-model="isOpen">

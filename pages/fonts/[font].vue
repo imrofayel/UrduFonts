@@ -39,11 +39,11 @@ const urduAlphabets = ref([
 
 <template>
 
-  <div class="flex-col text-4xl mx-10 overflow-visible py-2 justify-between text-[#1a1c1e] space-y-8">
+  <div class="flex-col text-4xl mx-4 sm:mx-10 overflow-visible py-2 justify-between text-[#1a1c1e] space-y-8">
 
     <div class="flex justify-between items-center dark:text-[#ffff]">
       
-      <div>{{ data.urdu }}</div>
+      <div class="pt-4">{{ data.urdu }}</div>
 
       <a :href="data.link" ><p class="hover:scale-105 ease-in-out duration-500 flex items-center bg-[#1c2c28] text-[#ffff] p-2 mx-1.5 py-1 rounded-3xl" style="direction: ltr;"><Icon name="lucide:arrow-down" size="24px"></Icon><div class="inter relative px-1 text-[19px] mehr">Download</div></p></a>
 

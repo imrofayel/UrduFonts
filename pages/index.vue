@@ -6,10 +6,10 @@
       
     <div v-for="font in formattedData" :key="font.family">
 
-    <NuxtLink :to="font.path"><div class="mx-8 space-y-4 dark:hover:bg-[#1c2c28] hover:bg-green-50 p-2 pb-10 rounded-3xl hover:scale-[1.03] duration-500 ease-in-out">
+    <NuxtLink :to="font.path"><div class="mx-8 space-y-4 dark:hover:bg-[#1c2c28] hover:bg-green-50 hover p-2 pb-10 rounded-3xl hover:scale-[1.03] duration-500 ease-in-out">
 
       <div class="text-lg inter rounded-3xl bg-[#1c2c28] p-3 py-1 text-[#ffff] inline-block">{{ font.title }}</div>
-
+ 
       <div :style="{ fontSize: font.size + 'px', fontFamily: font.family }">{{ text.length == 0 ? 'اردو ہے جس کا نام ہمیں جانتے ہیں داغ' : text }}
       </div>
 

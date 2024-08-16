@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+
 .noto-nastaliq {
   font-family: "Noto Nastaliq Urdu", serif;
   font-optical-sizing: auto;
@@ -14,7 +16,7 @@
 
 @font-face {
   font-family: 'Mehr';
-  src: url('/fonts/Mehr_Nastaliq_2.0/Mehr_Nastaliq_2.0.ttf') format('truetype');
+  src: url('/fonts/Mehr_Nastaliq_2.0.ttf') format('truetype');
 }
 
 @font-face {
@@ -23,5 +25,5 @@
 }
 
 * {
-    font-family: 'Mehr';
+    font-family: 'Gulzar';
 }
