@@ -17,31 +17,37 @@
 @font-face {
   font-family: 'Mehr';
   src: url('/fonts/MehrNastaliqWeb.woff2') format('woff2');
+  font-display: block;
 }
 
 @font-face {
   font-family: 'Jameel Noori Nastaliq';
   src: url('/fonts/JameelNooriNastaleeq.woff2') format('woff2');
+  font-display: block;
 }
 
 @font-face {
   font-family: 'Jameel Noori Nastaliq Kasheeda';
   src: url('/fonts/JameelNooriNastaleeqKasheeda.woff2') format('woff2');
+  font-display: block;
 }
 
 @font-face {
   font-family: 'Hussaini Nastaleeq';
   src: url('/fonts/HussainiNastaleeq.woff2') format('woff2');
+  font-display: block;
 }
 
 @font-face {
   font-family: 'Khat-e-Musarat';
   src: url('/fonts/Khat-e-Musarat.woff2') format('woff2');
+  font-display: block;
 }
 
 @font-face {
-  font-family: 'Gandhara_Suls';
-  src: url('/fonts/GandharaSuls.woff2') format('woff2');
+  font-family: 'Gandhara Suls';
+  src: url('/fonts/GandharaSuls.woff') format('woff2');
+  font-display: block;
 }
 
 
