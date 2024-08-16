@@ -21,12 +21,12 @@
 
 @font-face {
   font-family: 'Jameel Noori Nastaliq';
-  src: url('/fonts/Jameel_Noori_Nastaleeq.ttf') format('truetype');
+  src: url('/fonts/JameelNooriNastaleeq.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Jameel Noori Nastaliq Kasheeda';
-  src: url('/fonts/Jameel_Noori_Nastaleeq_Kasheeda.ttf') format('truetype');
+  src: url('/fonts/JameelNooriNastaleeq.woff') format('woff');
 }
 
 @font-face {
@@ -40,9 +40,10 @@
 }
 
 @font-face {
-  font-family: 'Gandhara Suls';
-  src: url('/fonts/Gandhara_Suls.ttf') format('truetype');
+  font-family: 'Gandhara_Suls';
+  src: url('/fonts/Gandhara_Suls.woff') format('woff');
 }
+
 
 * {
     font-family: 'Gulzar';
