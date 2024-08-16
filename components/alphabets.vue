@@ -7,7 +7,7 @@
         تمام حروف کا صرف ذیلی سیٹ یہاں دکھایا گیا ہے۔
       </h2>
     </div>
-    <div class="flex flex-wrap justify-center">
+    <div class="flex flex-wrap justify-right">
       <div
         v-for="(alphabet, index) in urduAlphabets"
         :key="index"
