@@ -8,7 +8,7 @@
     </div>
 
     <!-- Sidebar -->
-    <Sidebar class="sm:w-[80px] sm:h-screen w-screen h-[80px] fixed bottom-0 bg-green-50 backdrop-blur-lg sm:bottom-auto sm:top-0 sm:order-1 dark:bg-[#1c2c28]"/>
+    <Sidebar class="sm:w-[80px] sm:h-screen w-screen h-[80px] fixed bottom-0    bg-green-50/90 backdrop-blur-xl sm:bottom-auto sm:top-0 sm:order-1 dark:bg-[#1c2c28bf]"/>
   </div>
 </template>
 
