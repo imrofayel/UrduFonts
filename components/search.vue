@@ -62,9 +62,9 @@ function onSelect(option: { click?: () => void; to?: string | RouteLocationAsRel
 <template>
   <div class="basis-[50%] sm:basis-[45%] md:basis-[35%]">
 
-    <div class="h-16 bg-[#f3f6fcd2] backdrop-blur-lg rounded-full flex items-center p-6 hover:scale-110 duration-500 ease-in-out" @click="isOpen = true">
+    <div class="h-16 bg-green-50 dark:bg-[#1c2c28] backdrop-blur-lg rounded-full flex items-center p-6 hover:scale-110 duration-500 ease-in-out" @click="isOpen = true">
       <Icon name="lucide:search" size="24px"></Icon>
-      <div class="noto-nastaliq relative -top-1 pr-4">تلاش کریں</div>
+      <div class="relative -top-1 pr-4 text-xl">تلاش کریں</div>
     </div>
 
     <UModal v-model="isOpen">
@@ -89,26 +89,27 @@ function onSelect(option: { click?: () => void; to?: string | RouteLocationAsRel
         :autoselect="false"
         @update:model-value="onSelect"
 
-        class="blur-[0.3px] text-xl"
+        class="text-xl"
         
         :ui="{   
+
+          wrapper: 'bg-green-50 dark:bg-[#101917] divide-none',
           
           input: {
               icon: {
-                base: 'pointer-events-none absolute start-4 text-[#1a1c1e]',
+                base: 'text-[#022C22] opacity-30 pointer-events-none absolute start-4',
                 size: 'h-6 w-6',
               },
-              base: 'placeholder-[#1a1c1e]',
+              base: 'font-normal placeholder-[#022C22] text-[#1a1c1e] placeholder:opacity-50',
               size: 'sm:text-[21px]',
             },
             group: {
               wrapper: 'p-2',
-              label: 'px-2.5 my-2 text-2xl text-[#1a1c1e] dark:text-white',
-              container: 'text-[21px] text-[#1a1c1e] dark:text-gray-200 leading-loose',
+              label: 'font-normal px-2.5 my-2 text-2xl text-[#1a1c1e] dark:text-white',
+              container: 'text-[21px] text-[#1a1c1e] dark:text-[#ffff] leading-loose',
               command: {
-                base: 'flex justify-between select-none items-center rounded-md px-2.5 py-1.5 gap-2 relative',
-                active: 'bg-[#f3f6fc] dark:bg-gray-800 text-[#1a1c1e] dark:text-white',
-                inactive: '',
+                base: 'font-normal flex justify-between select-none items-center rounded-md px-2.5 py-1.5 gap-2 relative',
+                active: 'font-normal bg-[#ffff] dark:bg-[#1c2c28] text-[#1a1c1e] dark:text-white',
                 label: 'flex items-center gap-1.5 min-w-0',
                 prefix: 'text-gray-800 dark:text-gray-500',
                 suffix: 'text-gray-400 dark:text-gray-500',
@@ -116,14 +117,14 @@ function onSelect(option: { click?: () => void; to?: string | RouteLocationAsRel
                 icon: {
                   base: 'flex-shrink-0 w-8 h-8',
                   active: 'text-[#1a1c1e] dark:text-white',
-                  inactive: 'text-[#1a1c1e] dark:text-gray-500',
+                  inactive: 'text-[#1a1c1e] dark:text-white',
                 },
                 selectedIcon: {
                   base: 'h-5 w-5 text-[#1a1c1e] dark:text-white flex-shrink-0',
                 },
               },
-              active: 'flex-shrink-0 text-[#1a1c1e] dark:text-gray-400',
-              inactive: 'flex-shrink-0 text-[#1a1c1e] dark:text-gray-400',
+              active: 'flex-shrink-0 text-[#1a1c1e] dark:text-white',
+              inactive: 'flex-shrink-0 text-[#1a1c1e] dark:text-white',
             },
             
             default: {
@@ -135,7 +136,7 @@ function onSelect(option: { click?: () => void; to?: string | RouteLocationAsRel
         
         <template #empty-state>
           <div class="flex flex-col items-center justify-center py-6 gap-3">
-            <span class="text-[#1a1c1e] text-2xl">فونٹ نہیں مل سکا</span>
+            <span class="text-[#1a1c1e] dark:text-[#ffff] text-2xl">فونٹ نہیں مل سکا</span>
           </div>
         </template>
 

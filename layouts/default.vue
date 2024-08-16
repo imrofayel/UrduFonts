@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header class="mr-[25px] py-[20px]"/>
+    <Header class="py-[20px]"/>
     <main class="pt-[120px]"><slot/></main>
   </div>
 </template>

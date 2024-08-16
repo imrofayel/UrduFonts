@@ -4,5 +4,6 @@ export interface Font {
     urdu: string
     styles: string[]
     size: number
+    link: string
   }
   

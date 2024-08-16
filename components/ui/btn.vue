@@ -22,7 +22,7 @@ const handleClick = (event: any) => {
 
 <template>
   <div>
-    <div class="w-[52px] h-[50px] hover:bg-[#eef1f7] hover:rounded-xl duration-[700ms] ease-in-out p-1 rounded-3xl flex justify-center items-center hover:scale-105" @click="handleClick"><NuxtLink :to="link"><Icon :name="icon" :size="size"></Icon></NuxtLink></div>
+    <div class="w-[52px] h-[50px] hover:bg-green-100 dark:hover:bg-[#2c4640]  hover:rounded-xl duration-[700ms] ease-in-out p-1 rounded-3xl flex justify-center items-center hover:scale-105" @click="handleClick"><NuxtLink :to="link"><Icon :name="icon" :size="size"></Icon></NuxtLink></div>
   </div>
 </template>
 

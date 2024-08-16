@@ -7,7 +7,12 @@
 
     <UiBtn link="" icon="lucide:graduation-cap"/></div>
 
-    <UiBtn link="" icon="lucide:moon"/>
+    <a v-if="colorMode.value === 'light'" class="inline space-x-2"
+      @click="onClick('dark')" style="cursor: pointer;"><UiBtn icon="lucide:moon"/></a>
+
+    <a v-if="colorMode.value === 'dark'" class="inline space-x-2"
+      @click="onClick('light')" style="cursor: pointer;"><UiBtn icon="lucide:moon"/></a>
+    
 
   </div>
 
@@ -15,7 +20,10 @@
 
 <script lang="ts" setup>
 
-
+const colorMode = useColorMode()
+function onClick(val: string) {
+  colorMode.preference = val
+}
 </script>
 
 <style>

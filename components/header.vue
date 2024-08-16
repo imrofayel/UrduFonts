@@ -1,13 +1,11 @@
 <template>
-  <div class="flex items-center space-x-6 fixed w-screen z-10 bg-white/90 backdrop-blur-xl blur-[.3px]">
+  <div class="pr-[25px] flex items-center space-x-6 fixed w-screen z-10 bg-white/90 dark:bg-[#101917b2] backdrop-blur-xl">
 
-    <div class="text-[26px]">
+    <NuxtLink to="/"><div class="text-[26px]">
       <span class="noto-nastaliq relative">اردو فونٹس</span>
-    </div>
+    </div></NuxtLink>
 
     <Search class="pr-6"/>
-
-    <Icon name="lucide:shopping-bag" size="26px" class="hover:scale-110 duration-500 ease-in-out relative"></Icon>
 
   </div>
 </template>
