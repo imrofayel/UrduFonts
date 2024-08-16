@@ -6,9 +6,9 @@
       
     <div v-for="font in formattedData" :key="font.family">
 
-    <NuxtLink :to="font.path"><div class="mx-8 space-y-4 dark:hover:bg-[#1c2c28] hover:bg-green-50 hover p-2 pb-10 rounded-3xl hover:scale-[1.03] duration-500 ease-in-out">
+    <NuxtLink :to="font.path"><div class="mx-8 space-y-2 dark:hover:bg-[#1c2c28] hover:bg-green-50 hover p-2 pb-12 rounded-3xl hover:scale-[1.02] duration-500 ease-in-out">
 
-      <div class="text-lg inter rounded-3xl bg-[#1c2c28] p-3 py-1 text-[#ffff] inline-block">{{ font.title }}</div>
+      <div class="text-[22px] rounded-3xl bg-green-50 dark:bg-[#1c2c28] p-3 py-1 dark:text-[#ffff] inline-block relative">{{ font.urdu }}</div>
  
       <div :style="{ fontSize: font.size + 'px', fontFamily: font.family }">{{ text.length == 0 ? 'اردو ہے جس کا نام ہمیں جانتے ہیں داغ' : text }}
       </div>
@@ -23,13 +23,14 @@
 
 <script lang="ts" setup>
 
-const { data } = await useAsyncData('home', () => queryContent('/fonts').sort({ _id: -1 }).find())
+const { data } = await useAsyncData('home', () => queryContent('/fonts').sort({ _id: 1 }).find())
 
 const formattedData = computed(() => {
   return data.value?.map((articles) => {
     return {
       path: articles._path,
       title: articles.title || 'no-title available',
+      urdu: articles.urdu || 'نام',
       family: articles.family || 'no-family available',
       styles: articles.styles || [],
       size: articles.size || 26

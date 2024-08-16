@@ -20,8 +20,28 @@
 }
 
 @font-face {
+  font-family: 'Jameel Noori Nastaliq';
+  src: url('/fonts/Jameel_Noori_Nastaleeq.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Jameel Noori Nastaliq Kasheeda';
+  src: url('/fonts/Jameel_Noori_Nastaleeq_Kasheeda.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Hussaini Nastaleeq';
+  src: url('/fonts/Hussaini_Nastaleeq.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Khat-e-Musarat';
   src: url('/fonts/Khat-e-Musarat.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gandhara Suls';
+  src: url('/fonts/Gandhara_Suls.ttf') format('truetype');
 }
 
 * {
