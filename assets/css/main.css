@@ -16,32 +16,32 @@
 
 @font-face {
   font-family: 'Mehr';
-  src: url('/fonts/Mehr_Nastaliq_2.0.ttf') format('truetype');
+  src: url('/fonts/MehrNastaliqWeb.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Jameel Noori Nastaliq';
-  src: url('/fonts/JameelNooriNastaleeq.woff') format('woff');
+  src: url('/fonts/JameelNooriNastaleeq.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Jameel Noori Nastaliq Kasheeda';
-  src: url('/fonts/JameelNooriNastaleeq.woff') format('woff');
+  src: url('/fonts/JameelNooriNastaleeqKasheeda.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Hussaini Nastaleeq';
-  src: url('/fonts/Hussaini_Nastaleeq.ttf') format('truetype');
+  src: url('/fonts/HussainiNastaleeq.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Khat-e-Musarat';
-  src: url('/fonts/Khat-e-Musarat.otf') format('opentype');
+  src: url('/fonts/Khat-e-Musarat.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Gandhara_Suls';
-  src: url('/fonts/Gandhara_Suls.woff') format('woff');
+  src: url('/fonts/GandharaSuls.woff2') format('woff2');
 }
 
 
