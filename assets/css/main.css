@@ -92,6 +92,195 @@
   font-display: block !important;
 }
 
+/* SAMEER FONT FAMILY SARI REHTI HAI BHAI THEEK HAI? OR YAHAN SE AAGAY BUS FONTs ki md bnani rehti hai or family names zra dekh lien or PAK NASTALEEQ BHI REHTA HAI */
+
+@font-face {
+  font-family: 'AlQalam Shakir';
+  src: url('/fonts//AlQalamShakir.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'AlQalam Farhan';
+  src: url('/fonts/AlQalamFarhan.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'AlQalam Fawad';
+  src: url('AlQalamFawadLight.woff2') format('woff2');
+  font-display: block !important;
+
+}
+
+@font-face {
+  font-family: 'AlQalam Hassan';
+  src: url('/fonts/AlQalamHassan.woff2') format('woff2');
+  font-display: block !important;
+
+}
+
+@font-face {
+  font-family: 'AlQalam Ishtiaq';
+  src: url('/fonts/AlQalamIshtiaq.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'AlQalam Kashif';
+  src: url('/fonts/AlQalamKashifOutline.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'AlQalam Irzan';
+  src: url('/fonts/AlQalamIrzan.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'AlQalam Khalid Maqbool';
+  src: url('/fonts/AlQalamKhalidMaqbool.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'AlQalam Khat-e-Sumbali';
+  src: url('/fonts/AlQalamKhat-e-Sumbali.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'AlQalam Punjabi';
+  src: url('/fonts/AlQalamPunjabi.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'Al Qalam ShahJahan';
+  src: url('/fonts/AlQalamShahJahan.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'AlQalam Sadaf';
+  src: url('/fonts/AlQalamSadaf.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'Awad';
+  src: url('/fonts/Awad.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'AlQalam Tafseer';
+  src: url('/fonts/AlQalamTafseer.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'Aslam';
+  src: url('/fonts/Aslam.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'Diwani';
+  src: url('/fonts/DiwaniBent.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'Farsi Simple';
+  src: url('/fonts/FarsiSimpleOutline.woff2') format('woff2');
+  font-display: block !important;
+}
+
+/* YAHAN TK HOGYA BEY */
+
+@font-face {
+  font-family: 'Ghalib Unicode';
+  src: url('GhalibUnicode.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'KacstTitle';
+  src: url('KacstTitle.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ibteda Unicode';
+  src: url('IbtedaUnicode.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nastaleeq Like';
+  src: url('NastaleeqLike.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Old Antic Outline Shaded';
+  src: url('OldAnticOutlineShaded.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PDMS_Bukhari';
+  src: url('_PDMS_Bukhari.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UL Bilal Outline';
+  src: url('ULBilalOutline.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharmeen';
+  src: url('Sharmeen.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PDMS_PencilNafees';
+  src: url('_PDMS_PencilNafees.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PDMS_Jauhar';
+  src: url('_PDMS_Jauhar.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 * {
     font-family: 'Gulzar';
     font-display: block;
