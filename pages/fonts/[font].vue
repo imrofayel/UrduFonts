@@ -49,7 +49,7 @@ const urduAlphabets = ref([
 
     </div>
 
-    <div class="text-[32px] dark:text-[#ffff] sm:text-4xl leading-loose flex justify-center pb-10 text-center" :style="{ fontFamily: data.family }">اردو ہے جس کا نام ہمیں جانتے ہیں داغ​</div>
+    <div class="dark:text-[#ffff] leading-loose flex justify-center pb-10 text-center" :style="{ fontFamily: data.family, fontSize: data.size+10 + 'px' }">اردو ہے جس کا نام ہمیں جانتے ہیں داغ​</div>
 
     <div class="flex-row sm:flex-col my-12 mx-2 items-center space-y-6"><div class="sm:w-1/2 flex bg-green-50 dark:bg-[#1c2c28] p-1 rounded-full mb-12"><input type="text" v-model="text" class="w-full mr-4 mb-1 leading-[4rem] overflow-visible noto-nastaliq text-[20px] bg-transparent focus:outline-none focus:ring-0 placeholder:text-[#1a1c1e] dark:placeholder:text-[#ffff]" placeholder="الفاظ  یہاں تحریر کریں">
     </div>
