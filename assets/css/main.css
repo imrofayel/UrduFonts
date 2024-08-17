@@ -92,8 +92,6 @@
   font-display: block !important;
 }
 
-/* SAMEER FONT FAMILY SARI REHTI HAI BHAI THEEK HAI? OR YAHAN SE AAGAY BUS FONTs ki md bnani rehti hai or family names zra dekh lien or PAK NASTALEEQ BHI REHTA HAI */
-
 @font-face {
   font-family: 'AlQalam Shakir';
   src: url('/fonts//AlQalamShakir.woff2') format('woff2');
@@ -264,6 +262,7 @@
   font-display: block !important;
 }
 
+/* SAMEER FONT FAMILY SARI REHTI HAI BHAI THEEK HAI? OR YAHAN SE AAGAY BUS FONTs ki md bnani rehti hai or family names zra dekh lien OR Han Google pa jo Arabic fonts hien na 48 wo sb bhi daal dien ismien or un k aagay mention bhi krdien Arabic / Persian/ Language filter yk maybe now ya baad main khien */
 
 * {
     font-family: 'Gulzar';
