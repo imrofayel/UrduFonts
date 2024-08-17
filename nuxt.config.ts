@@ -5,5 +5,7 @@ export default defineNuxtConfig({
 
   css: [
     'assets/css/main.css'
-  ]
+  ],
+
+  compatibilityDate: "2024-08-17"
 })

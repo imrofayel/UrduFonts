@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const { data } = await useAsyncData('home', () => queryContent('/fonts').sort({ _id: 1 }).find())
 
-const elementPerPage = ref(6) // Number of fonts per page
+const elementPerPage = ref(8) // Number of fonts per page
 const pageNumber = ref(1) // Current page number
 
 const formattedData = computed(() => {
@@ -66,20 +66,18 @@ function gotoPage(page : number) {
     </div>
 
     <!-- Pagination controls -->
-    <div class="justify-center items-center flex"><div class="my-8 p-3 py-2 rounded-3xl space-x-8 text-[21px] flex justify-center bg-green-50 text-[#1c2c28] dark:bg-[#1c2c28] dark:text-[#ffff]" v-if="totalPage > 1" style="direction: ltr;">
+    <div class="m-8 rounded-3xl space-x-8 text-[21px] flex justify-between  text-[#1c2c28] dark:text-[#ffff]" v-if="totalPage > 1" style="direction: ltr;">
 
       
-      <button :disabled="pageNumber >= totalPage" @click="onNextPageClick">
-        <Icon name="lucide:chevron-left" size="26" class="relative top-1 opacity-90" :class="{ 'opacity-20': pageNumber >= totalPage }"/></button>
+      <button :disabled="pageNumber >= totalPage" @click="onNextPageClick" class="bg-[#1c2c28] p-2 px-4 text-[#ffff] rounded-3xl" :class="{ 'opacity-0': pageNumber >= totalPage }">
+        <Icon name="lucide:chevron-left" size="28" class="relative top-1 opacity-90"/></button>
 
 
-      <div class="relative top-2">صفحات</div>
-
-      <button :disabled="pageNumber <= 1" @click="onPreviousPageClick">
-        <Icon name="lucide:chevron-right" size="26" class="relative top-1 opacity-90" :class="{ 'opacity-20': pageNumber <= 1 }"/>
+      <button :disabled="pageNumber <= 1" @click="onPreviousPageClick" class="bg-[#1c2c28] p-2 px-4 text-[#ffff] rounded-3xl" :class="{ 'opacity-0': pageNumber <= 1 }">
+        <Icon name="lucide:chevron-right" size="28" class="relative top-1 opacity-90"/>
       </button>
 
-    </div></div>
+    </div>
 
   </div>
 </template>

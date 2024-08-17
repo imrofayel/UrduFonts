@@ -1,4 +1,5 @@
 <template>
+  
   <div class="pr-[25px] flex items-center space-x-6 fixed w-screen z-10 bg-white/90 dark:bg-[#101917b2] backdrop-blur-xl">
 
     <NuxtLink to="/"><div class="text-[26px]">

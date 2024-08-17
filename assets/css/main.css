@@ -16,41 +16,83 @@
 
 @font-face {
   font-family: 'Mehr';
-  src: url('/fonts/MehrNastaliqWeb.woff2') format('woff2');
-  font-display: block;
+  src: url('/fonts/MehrNastaliqWeb.woff') format('woff');
+  font-display: block !important;
 }
 
 @font-face {
   font-family: 'Jameel Noori Nastaliq';
   src: url('/fonts/JameelNooriNastaleeq.woff2') format('woff2');
-  font-display: block;
+  font-display: block !important;
 }
 
 @font-face {
   font-family: 'Jameel Noori Nastaliq Kasheeda';
   src: url('/fonts/JameelNooriNastaleeqKasheeda.woff2') format('woff2');
-  font-display: block;
+  font-display: block !important;
 }
 
 @font-face {
   font-family: 'Hussaini Nastaleeq';
   src: url('/fonts/HussainiNastaleeq.woff2') format('woff2');
-  font-display: block;
+  font-display: block !important;
 }
 
 @font-face {
   font-family: 'Khat-e-Musarat';
   src: url('/fonts/Khat-e-Musarat.woff2') format('woff2');
-  font-display: block;
+  font-display: block !important;
 }
 
 @font-face {
   font-family: 'Gandhara Suls';
   src: url('/fonts/GandharaSuls.woff') format('woff2');
-  font-display: block;
+  font-display: block !important;
 }
 
+@font-face {
+  font-family: 'Aadil';
+  src: url('/fonts/Aadil.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'AlFars Symbols';
+  src: url('/fonts/AlFarsSymbols.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'AlQalam Abuzar';
+  src: url('/fonts/AlQalamAbuzar.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'AlQalam Fakhar';
+  src: url('/fonts/AlQalamFakhar.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'AlQalam Ferdos';
+  src: url('/fonts/AlQalamFerdaos.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'Alvi Nastaliq';
+  src: url('/fonts/AlviNastaleeq.woff2') format('woff2');
+  font-display: block !important;
+}
+
+@font-face {
+  font-family: 'Arslan Waseem';
+  src: url('/fonts/ArslanWessam.woff2') format('woff2');
+  font-display: block !important;
+}
 
 * {
     font-family: 'Gulzar';
+    font-display: block;
 }
