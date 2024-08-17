@@ -108,7 +108,7 @@
 
 @font-face {
   font-family: 'AlQalam Fawad';
-  src: url('AlQalamFawadLight.woff2') format('woff2');
+  src: url('/fonts/AlQalamFawadLight.woff2') format('woff2');
   font-display: block !important;
 
 }
