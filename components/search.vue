@@ -1,61 +1,77 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
-import { useRouter, type RouteLocationAsPathGeneric, type RouteLocationAsRelativeGeneric } from 'vue-router';
+import { ref, computed } from "vue";
+import {
+	useRouter,
+	type RouteLocationAsPathGeneric,
+	type RouteLocationAsRelativeGeneric,
+} from "vue-router";
 
 const isOpen = ref(false);
 const commandPaletteRef = ref();
 const router = useRouter();
 
 // Fetch font data using useAsyncData
-const { data } = await useAsyncData('fonts', () =>
-  queryContent('/fonts').sort({ _id: -1 }).find()
+const { data } = await useAsyncData("fonts", () =>
+	queryContent("/fonts").sort({ _id: -1 }).find(),
 );
 
 // Transform the data into the desired pages format
 const pages = computed(() => {
-  // Ensure data.value is an array, map over the array to format each entry
-  return data.value?.map((font) => ({
-    id: font.family || 'no-family',
-    label: font.urdu || 'no-title',
-    href: font._path || '#'
-  })) || [];
+	// Ensure data.value is an array, map over the array to format each entry
+	return (
+		data.value?.map((font) => ({
+			id: font.family || "no-family",
+			label: font.urdu || "no-title",
+			href: font._path || "#",
+		})) || []
+	);
 });
 
 // Actions array for non-search commands
 const actions = [
-  { id: 'jameel_noori_nastaliq', label: 'جمیل نوری نستعلیق', click: () => { console.log('Action clicked'); } },
+	{
+		id: "jameel_noori_nastaliq",
+		label: "جمیل نوری نستعلیق",
+		click: () => {
+			console.log("Action clicked");
+		},
+	},
 ];
 
 // Groups computed property for organizing commands
 const groups = computed(() => {
-  if (commandPaletteRef.value?.query) {
-    // If there's a query, show pages
-    return [
-      {
-        key: 'pages',
-        commands: pages.value,
-      },
-    ];
-  } else {
-    // Otherwise, show actions
-    return [
-      {
-        key: 'actions',
-        commands: actions,
-      },
-    ];
-  }
+	if (commandPaletteRef.value?.query) {
+		// If there's a query, show pages
+		return [
+			{
+				key: "pages",
+				commands: pages.value,
+			},
+		];
+	} else {
+		// Otherwise, show actions
+		return [
+			{
+				key: "actions",
+				commands: actions,
+			},
+		];
+	}
 });
 
 // Function to handle option selection
-function onSelect(option: { click?: () => void; to?: string | RouteLocationAsRelativeGeneric | RouteLocationAsPathGeneric; href?: string | URL }) {
-  if (option.click) {
-    option.click();
-  } else if (option.to) {
-    router.push(option.to);
-  } else if (option.href) {
-    window.open(option.href, '_blank');
-  }
+function onSelect(option: {
+	click?: () => void;
+	to?: string | RouteLocationAsRelativeGeneric | RouteLocationAsPathGeneric;
+	href?: string | URL;
+}) {
+	if (option.click) {
+		option.click();
+	} else if (option.to) {
+		router.push(option.to);
+	} else if (option.href) {
+		window.open(option.href, "_blank");
+	}
 }
 </script>
 

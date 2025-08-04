@@ -1,24 +1,24 @@
 <script setup lang="ts">
+import type { Article } from "~/types/article";
 
-import type { Article } from '~/types/article';
+const { path } = useRoute();
 
-const { path } = useRoute()
+const { data: articles, error } = await useAsyncData(`blog-post-${path}`, () =>
+	queryContent(path).findOne(),
+);
 
-const { data: articles, error } = await useAsyncData(`blog-post-${path}`, () => queryContent(path).findOne())
-
-if (error.value) navigateTo('/404')
+if (error.value) navigateTo("/404");
 
 const data = computed<Article>(() => {
-  return {
-    title: articles.value?.title || 'not available',
-    date: articles.value?.date || 'not available'
-  }
-})
+	return {
+		title: articles.value?.title || "not available",
+		date: articles.value?.date || "not available",
+	};
+});
 
 definePageMeta({
-  layout: 'default'
-})
-
+	layout: "default",
+});
 </script>
 
 <template>

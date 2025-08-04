@@ -1,5 +1,4 @@
 export interface Article {
-    title: string
-    date: string
+	title: string;
+	date: string;
 }
-  

@@ -39,16 +39,15 @@
 </template>
 
 <script lang="ts" setup>
-
 const route = useRoute();
 const colorMode = useColorMode();
 
 function isCurrentPath(path: string) {
-  return route.path === path;
+	return route.path === path;
 }
 
 function onClick(val: string) {
-  colorMode.preference = val;
+	colorMode.preference = val;
 }
 </script>
 
