@@ -1,435 +1,346 @@
 [
-  {
-    "title": "Aadil",
-    "family": "Aadil",
-    "urdu": "آدل",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Aadil.ttf"
-  },
-  {
-    "title": "Al Qalam ShahJahan",
-    "family": "Al Qalam ShahJahan",
-    "urdu": "القلم شاہ جہاں",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamShahJahan.ttf"
-  },
-  {
-    "title": "AlFars Symbols",
-    "family": "AlFars Symbols",
-    "urdu": "الفارس علامات",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 38,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlFarsSymbols.ttf"
-  },
-  {
-    "title": "AlQalam Abuzar",
-    "family": "AlQalam Abuzar",
-    "urdu": "القلم ابوذر",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 42,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamAbuzar.ttf"
-  },
-  {
-    "title": "AlQalam Fakhar",
-    "family": "AlQalam Fakhar",
-    "urdu": "القلم فخر",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamFakhar.ttf"
-  },
-  {
-    "title": "AlQalam Farhan",
-    "family": "AlQalam Farhan",
-    "urdu": "القلم فرحان",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamFarhan.ttf"
-  },
-  {
-    "title": "AlQalam Fawad",
-    "family": "AlQalam Fawad",
-    "urdu": "القلم فواد",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamFawadLight.ttf"
-  },
-  {
-    "title": "AlQalam Ferdos",
-    "family": "AlQalam Ferdos",
-    "urdu": "القلم فردوس",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 34,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamFerdaos.ttf"
-  },
-  {
-    "title": "AlQalam Hassan",
-    "family": "AlQalam Hassan",
-    "urdu": "القلم حسن",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamHassan.ttf"
-  },
-  {
-    "title": "AlQalam Irzan",
-    "family": "AlQalam Irzan",
-    "urdu": "القلم ارزان",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamIrzan.ttf"
-  },
-  {
-    "title": "AlQalam Ishtiaq",
-    "family": "AlQalam Ishtiaq",
-    "urdu": "القلم اشتیاق",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamIshtiaq.ttf"
-  },
-  {
-    "title": "AlQalam Kashif",
-    "family": "AlQalam Kashif",
-    "urdu": "القلم کاشف",
-    "styles": [
-      "Outline 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamKashifOutline.ttf"
-  },
-  {
-    "title": "AlQalam Khalid Maqbool",
-    "family": "AlQalam Khalid Maqbool",
-    "urdu": "القم خالد مقبول",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamKhalidMaqbool.ttf"
-  },
-  {
-    "title": "AlQalam Khat-e-Sumbali",
-    "family": "AlQalam Khat-e-Sumbali",
-    "urdu": "القلم خطِ سنبلی",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamKhat-e-Sumbali.ttf"
-  },
-  {
-    "title": "AlQalam Punjabi",
-    "family": "AlQalam Punjabi",
-    "urdu": "القلم پنجابی",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamPunjabi.ttf"
-  },
-  {
-    "title": "AlQalam Sadaf",
-    "family": "AlQalam Sadaf",
-    "urdu": "القلم سدف",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamSadaf.ttf"
-  },
-  {
-    "title": "AlQalam Shakir",
-    "family": "AlQalam Shakir",
-    "urdu": "القلم شاکر",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamShakir.ttf"
-  },
-  {
-    "title": "AlQalam Tafseer",
-    "family": "AlQalam Tafseer",
-    "urdu": "القلم تفسیر",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamTafseer.ttf"
-  },
-  {
-    "title": "Alvi Nastaliq",
-    "family": "Alvi Nastaliq",
-    "urdu": "علوی نستعلیق",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 36,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlviNastaleeq.ttf"
-  },
-  {
-    "title": "Arslan Waseem",
-    "family": "Arslan Waseem",
-    "urdu": "ارسلان وسیم",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 42,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/ArslanWessam.ttf"
-  },
-  {
-    "title": "Aslam",
-    "family": "Aslam",
-    "urdu": "اسلم",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Aslam.ttf"
-  },
-  {
-    "title": "Awad",
-    "family": "Awad",
-    "urdu": "اواد",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Awad.ttf"
-  },
-  {
-    "title": "Bilal Outline",
-    "family": "Bilal Outline",
-    "urdu": "بلال",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/BilalOutline.ttf"
-  },
-  {
-    "title": "Bukhari",
-    "family": "Bukhari",
-    "urdu": "بخاری",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Bukhari.ttf"
-  },
-  {
-    "title": "Diwani",
-    "family": "Diwani",
-    "urdu": "دیوانی",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/DiwaniBent.ttf"
-  },
-  {
-    "title": "Farsi Simple",
-    "family": "Farsi Simple",
-    "urdu": "فارسی آسان",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/FarsiSimpleOutline.ttf"
-  },
-  {
-    "title": "Gandhara Suls",
-    "family": "Gandhara Suls",
-    "urdu": "گندھارا ثلث",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 34,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/GandharaSuls.ttf"
-  },
-  {
-    "title": "Ghalib",
-    "family": "Ghalib",
-    "urdu": "غالب",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Ghalib.ttf"
-  },
-  {
-    "title": "Gulzar",
-    "family": "Gulzar",
-    "urdu": "گلزار",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 31,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Gulzar.ttf"
-  },
-  {
-    "title": "Hussaini Nastaleeq",
-    "family": "Hussaini Nastaleeq",
-    "urdu": "حسینی نستعلیق",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 33,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/HussainiNastaleeq.ttf"
-  },
-  {
-    "title": "Ibteda",
-    "family": "Ibteda",
-    "urdu": "ابتداء",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Ibteda.ttf"
-  },
-  {
-    "title": "Jameel Noori Nastaliq",
-    "family": "Jameel Noori Nastaliq",
-    "urdu": "جمیل نوری نستعلیق",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/JameelNooriNastaleeq.ttf"
-  },
-  {
-    "title": "Jameel Noori Nastaliq Kasheeda",
-    "family": "Jameel Noori Nastaliq Kasheeda",
-    "urdu": "جمیل نوری نستعلیق کشیدہ",
-    "styles": [
-      "Italic 400"
-    ],
-    "size": 38,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/JameelNooriNastaleeqKasheeda.ttf"
-  },
-  {
-    "title": "Jauhar",
-    "family": "Jauhar",
-    "urdu": "جوہر",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Jauhar.ttf"
-  },
-  {
-    "title": "KacstTitle",
-    "family": "KacstTitle",
-    "urdu": "کیکسٹ",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/KacstTitle.ttf"
-  },
-  {
-    "title": "Khat e Musarat",
-    "family": "Khat-e-Musarat",
-    "urdu": "خطِ مسرت",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 34,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/KhateMusarat.ttf"
-  },
-  {
-    "title": "Laiq Nastaleeq",
-    "family": "Laiq Nastaleeq",
-    "urdu": "لائق نستعلیق",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/LaiqNastaleeq.ttf"
-  },
-  {
-    "title": "Mehr Nastaliq",
-    "family": "Mehr",
-    "urdu": "مہر نستعلیق",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 36,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/MehrNastaliqWeb.ttf"
-  },
-  {
-    "title": "Noto Nastaliq",
-    "family": "Noto Nastaliq Urdu",
-    "urdu": "نوٹو نستعلیق",
-    "styles": [
-      "Regular 400",
-      "Medium 500",
-      "SemiBold 600",
-      "Bold 700"
-    ],
-    "size": 28,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/NotoNastaliq.ttf"
-  },
-  {
-    "title": "Old Antic Outline Shaded",
-    "family": "Old Antic Outline Shaded",
-    "urdu": "قدیم فوںٹ",
-    "styles": [
-      "Outline 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/OldAnticOutlineShaded.ttf"
-  },
-  {
-    "title": "Pak Nastaleeq",
-    "family": "Pak Nastaleeq",
-    "urdu": "پاک نستعلیق",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/PakNastaleeq.ttf"
-  },
-  {
-    "title": "Pencil Nafees",
-    "family": "Pencil Nafees",
-    "urdu": "پینسل نفیس",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/PencilNafees.ttf"
-  },
-  {
-    "title": "Sharmeen",
-    "family": "Sharmeen",
-    "urdu": "شرمین",
-    "styles": [
-      "Regular 400"
-    ],
-    "size": 40,
-    "link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Sharmeen.ttf"
-  }
+	{
+		"title": "Aadil",
+		"family": "Aadil",
+		"urdu": "آدل",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Aadil.ttf"
+	},
+	{
+		"title": "Al Qalam ShahJahan",
+		"family": "Al Qalam ShahJahan",
+		"urdu": "القلم شاہ جہاں",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamShahJahan.ttf"
+	},
+	{
+		"title": "AlFars Symbols",
+		"family": "AlFars Symbols",
+		"urdu": "الفارس علامات",
+		"styles": ["Regular 400"],
+		"size": 38,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlFarsSymbols.ttf"
+	},
+	{
+		"title": "AlQalam Abuzar",
+		"family": "AlQalam Abuzar",
+		"urdu": "القلم ابوذر",
+		"styles": ["Regular 400"],
+		"size": 42,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamAbuzar.ttf"
+	},
+	{
+		"title": "AlQalam Fakhar",
+		"family": "AlQalam Fakhar",
+		"urdu": "القلم فخر",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamFakhar.ttf"
+	},
+	{
+		"title": "AlQalam Farhan",
+		"family": "AlQalam Farhan",
+		"urdu": "القلم فرحان",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamFarhan.ttf"
+	},
+	{
+		"title": "AlQalam Fawad",
+		"family": "AlQalam Fawad",
+		"urdu": "القلم فواد",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamFawadLight.ttf"
+	},
+	{
+		"title": "AlQalam Ferdos",
+		"family": "AlQalam Ferdos",
+		"urdu": "القلم فردوس",
+		"styles": ["Regular 400"],
+		"size": 34,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamFerdaos.ttf"
+	},
+	{
+		"title": "AlQalam Hassan",
+		"family": "AlQalam Hassan",
+		"urdu": "القلم حسن",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamHassan.ttf"
+	},
+	{
+		"title": "AlQalam Irzan",
+		"family": "AlQalam Irzan",
+		"urdu": "القلم ارزان",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamIrzan.ttf"
+	},
+	{
+		"title": "AlQalam Ishtiaq",
+		"family": "AlQalam Ishtiaq",
+		"urdu": "القلم اشتیاق",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamIshtiaq.ttf"
+	},
+	{
+		"title": "AlQalam Kashif",
+		"family": "AlQalam Kashif",
+		"urdu": "القلم کاشف",
+		"styles": ["Outline 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamKashifOutline.ttf"
+	},
+	{
+		"title": "AlQalam Khalid Maqbool",
+		"family": "AlQalam Khalid Maqbool",
+		"urdu": "القم خالد مقبول",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamKhalidMaqbool.ttf"
+	},
+	{
+		"title": "AlQalam Khat-e-Sumbali",
+		"family": "AlQalam Khat-e-Sumbali",
+		"urdu": "القلم خطِ سنبلی",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamKhat-e-Sumbali.ttf"
+	},
+	{
+		"title": "AlQalam Punjabi",
+		"family": "AlQalam Punjabi",
+		"urdu": "القلم پنجابی",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamPunjabi.ttf"
+	},
+	{
+		"title": "AlQalam Sadaf",
+		"family": "AlQalam Sadaf",
+		"urdu": "القلم سدف",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamSadaf.ttf"
+	},
+	{
+		"title": "AlQalam Shakir",
+		"family": "AlQalam Shakir",
+		"urdu": "القلم شاکر",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamShakir.ttf"
+	},
+	{
+		"title": "AlQalam Tafseer",
+		"family": "AlQalam Tafseer",
+		"urdu": "القلم تفسیر",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlQalamTafseer.ttf"
+	},
+	{
+		"title": "Alvi Nastaliq",
+		"family": "Alvi Nastaliq",
+		"urdu": "علوی نستعلیق",
+		"styles": ["Regular 400"],
+		"size": 36,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/AlviNastaleeq.ttf"
+	},
+	{
+		"title": "Arslan Waseem",
+		"family": "Arslan Waseem",
+		"urdu": "ارسلان وسیم",
+		"styles": ["Regular 400"],
+		"size": 42,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/ArslanWessam.ttf"
+	},
+	{
+		"title": "Aslam",
+		"family": "Aslam",
+		"urdu": "اسلم",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Aslam.ttf"
+	},
+	{
+		"title": "Awad",
+		"family": "Awad",
+		"urdu": "اواد",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Awad.ttf"
+	},
+	{
+		"title": "Bilal Outline",
+		"family": "Bilal Outline",
+		"urdu": "بلال",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/BilalOutline.ttf"
+	},
+	{
+		"title": "Bukhari",
+		"family": "Bukhari",
+		"urdu": "بخاری",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Bukhari.ttf"
+	},
+	{
+		"title": "Diwani",
+		"family": "Diwani",
+		"urdu": "دیوانی",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/DiwaniBent.ttf"
+	},
+	{
+		"title": "Farsi Simple",
+		"family": "Farsi Simple",
+		"urdu": "فارسی آسان",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/FarsiSimpleOutline.ttf"
+	},
+	{
+		"title": "Gandhara Suls",
+		"family": "Gandhara Suls",
+		"urdu": "گندھارا ثلث",
+		"styles": ["Regular 400"],
+		"size": 34,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/GandharaSuls.ttf"
+	},
+	{
+		"title": "Ghalib",
+		"family": "Ghalib",
+		"urdu": "غالب",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Ghalib.ttf"
+	},
+	{
+		"title": "Gulzar",
+		"family": "Gulzar",
+		"urdu": "گلزار",
+		"styles": ["Regular 400"],
+		"size": 31,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Gulzar.ttf"
+	},
+	{
+		"title": "Hussaini Nastaleeq",
+		"family": "Hussaini Nastaleeq",
+		"urdu": "حسینی نستعلیق",
+		"styles": ["Regular 400"],
+		"size": 33,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/HussainiNastaleeq.ttf"
+	},
+	{
+		"title": "Ibteda",
+		"family": "Ibteda",
+		"urdu": "ابتداء",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Ibteda.ttf"
+	},
+	{
+		"title": "Jameel Noori Nastaliq",
+		"family": "Jameel Noori Nastaliq",
+		"urdu": "جمیل نوری نستعلیق",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/JameelNooriNastaleeq.ttf"
+	},
+	{
+		"title": "Jameel Noori Nastaliq Kasheeda",
+		"family": "Jameel Noori Nastaliq Kasheeda",
+		"urdu": "جمیل نوری نستعلیق کشیدہ",
+		"styles": ["Italic 400"],
+		"size": 38,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/JameelNooriNastaleeqKasheeda.ttf"
+	},
+	{
+		"title": "Jauhar",
+		"family": "Jauhar",
+		"urdu": "جوہر",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Jauhar.ttf"
+	},
+	{
+		"title": "KacstTitle",
+		"family": "KacstTitle",
+		"urdu": "کیکسٹ",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/KacstTitle.ttf"
+	},
+	{
+		"title": "Khat e Musarat",
+		"family": "Khat-e-Musarat",
+		"urdu": "خطِ مسرت",
+		"styles": ["Regular 400"],
+		"size": 34,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/KhateMusarat.ttf"
+	},
+	{
+		"title": "Laiq Nastaleeq",
+		"family": "Laiq Nastaleeq",
+		"urdu": "لائق نستعلیق",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/LaiqNastaleeq.ttf"
+	},
+	{
+		"title": "Mehr Nastaliq",
+		"family": "Mehr",
+		"urdu": "مہر نستعلیق",
+		"styles": ["Regular 400"],
+		"size": 36,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/MehrNastaliqWeb.ttf"
+	},
+	{
+		"title": "Noto Nastaliq",
+		"family": "Noto Nastaliq Urdu",
+		"urdu": "نوٹو نستعلیق",
+		"styles": ["Regular 400", "Medium 500", "SemiBold 600", "Bold 700"],
+		"size": 28,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/NotoNastaliq.ttf"
+	},
+	{
+		"title": "Old Antic Outline Shaded",
+		"family": "Old Antic Outline Shaded",
+		"urdu": "قدیم فوںٹ",
+		"styles": ["Outline 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/OldAnticOutlineShaded.ttf"
+	},
+	{
+		"title": "Pak Nastaleeq",
+		"family": "Pak Nastaleeq",
+		"urdu": "پاک نستعلیق",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/PakNastaleeq.ttf"
+	},
+	{
+		"title": "Pencil Nafees",
+		"family": "Pencil Nafees",
+		"urdu": "پینسل نفیس",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/PencilNafees.ttf"
+	},
+	{
+		"title": "Sharmeen",
+		"family": "Sharmeen",
+		"urdu": "شرمین",
+		"styles": ["Regular 400"],
+		"size": 40,
+		"link": "https://raw.githubusercontent.com/imrofayel/UrduFonts/master/fonts/Sharmeen.ttf"
+	}
 ]

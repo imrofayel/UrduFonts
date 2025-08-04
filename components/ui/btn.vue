@@ -1,25 +1,23 @@
 <!-- <script lang="ts" setup>
-
 interface Props {
-  link: string
-  icon: string
-  size: string
-  fill: boolean
+	link: string;
+	icon: string;
+	size: string;
+	fill: boolean;
 }
 
 withDefaults(defineProps<Props>(), {
-  link: '',
-  icon: 'lucide:flame',
-  size: '28px',
-  fill: true
-})
+	link: "",
+	icon: "lucide:flame",
+	size: "28px",
+	fill: true,
+});
 
-const emits = defineEmits(['click']);
+const emits = defineEmits(["click"]);
 
 const handleClick = (event: any) => {
-  emits('click', event);
+	emits("click", event);
 };
-
 </script>
 
 <template>

@@ -1,0 +1,5 @@
+{
+	"source.organizeImports.biome": "explicit",
+	"editor.formatOnSave": true,
+	"biome.enable": true
+}

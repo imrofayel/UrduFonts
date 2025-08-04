@@ -1,67 +1,63 @@
 <script lang="ts" setup>
-import type { Font } from '~/types/font';
-import fontsData from '~/data/fonts.json';
+import type { Font } from "~/types/font";
+import fontsData from "~/data/fonts.json";
 
-const elementPerPage = ref(8) // Number of fonts per page
-const pageNumber = ref(1) // Current page number
+const elementPerPage = ref(8); // Number of fonts per page
+const pageNumber = ref(1); // Current page number
 
 // Function to convert title to kebab-case slug for URL
 const titleToSlug = (title: string): string => {
-  return title.toLowerCase().replace(/\s+/g, '-')
-}
+	return title.toLowerCase().replace(/\s+/g, "-");
+};
 
 const formattedData = computed(() => {
-  // Ensure fontsData.value is an array before mapping
-  const fonts = fontsData || []
-  if (!Array.isArray(fonts)) {
-    console.error('Fonts data is not an array:', fonts)
-    return []
-  }
-  
-  const formatted = fonts.map((font) => {
-    const slug = titleToSlug(font.title || 'untitled')
-    return {
-      path: `/font/${slug}`, // Create slug-based path
-      title: font.title || 'no-title available',
-      urdu: font.urdu || 'نام',
-      family: font.family || 'no-family available',
-      styles: font.styles || [],
-      size: font.size || 26
-    }
-  })
-  
-  console.log('Generated paths:', formatted.slice(0, 3).map(f => ({ title: f.title, path: f.path })))
-  return formatted
-})
+	// Ensure fontsData.value is an array before mapping
+	const fonts = fontsData || [];
+	if (!Array.isArray(fonts)) {
+		console.error("Fonts data is not an array:", fonts);
+		return [];
+	}
+
+	const formatted = fonts.map((font) => {
+		const slug = titleToSlug(font.title || "untitled");
+		return {
+			path: `/font/${slug}`, // Create slug-based path
+			title: font.title || "no-title available",
+			urdu: font.urdu || "نام",
+			family: font.family || "no-family available",
+			styles: font.styles || [],
+			size: font.size || 26,
+		};
+	});
+
+	console.log(
+		"Generated paths:",
+		formatted.slice(0, 3).map((f) => ({ title: f.title, path: f.path })),
+	);
+	return formatted;
+});
 
 // Computed property to handle pagination
 const paginatedData = computed(() => {
-  const startInd = (pageNumber.value - 1) * elementPerPage.value
-  const endInd = pageNumber.value * elementPerPage.value
-  return formattedData.value.slice(startInd, endInd)
-})
+	const startInd = (pageNumber.value - 1) * elementPerPage.value;
+	const endInd = pageNumber.value * elementPerPage.value;
+	return formattedData.value.slice(startInd, endInd);
+});
 
 const totalPage = computed(() => {
-  const ttlContent = formattedData.value.length || 0
-  return Math.ceil(ttlContent / elementPerPage.value)
-})
+	const ttlContent = formattedData.value.length || 0;
+	return Math.ceil(ttlContent / elementPerPage.value);
+});
 
 function onPreviousPageClick() {
-  if (pageNumber.value > 1)
-    pageNumber.value -= 1
+	if (pageNumber.value > 1) pageNumber.value -= 1;
 }
 
 function onNextPageClick() {
-  if (pageNumber.value < totalPage.value)
-    pageNumber.value += 1
+	if (pageNumber.value < totalPage.value) pageNumber.value += 1;
 }
 
-const text = ref('');
-
-function gotoPage(page : number) {
-  pageNumber.value = page
-}
-
+const text = ref("");
 </script>
 
 <template>
