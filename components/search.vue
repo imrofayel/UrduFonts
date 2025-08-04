@@ -18,7 +18,6 @@ const titleToSlug = (title: string): string => {
     .trim();
 };
 
-
 // Transform the data into the desired pages format
 const pages = computed(() => {
   // Ensure data.value is an array, map over the array to format each entry

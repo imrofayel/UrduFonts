@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const colorMode = useColorMode();
 function onClick(val: string) {
-  colorMode.preference = val;
+	colorMode.preference = val;
 }
 </script>
 

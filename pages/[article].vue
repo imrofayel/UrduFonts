@@ -23,8 +23,7 @@ definePageMeta({
 
 <template>
 
-  <div
-    class="leading-[3.3rem] text-justify text-[20px] mx-[20px] ml-[100px] prose-headings:text-[32px] prose-headings:my-8">
+  <div class="leading-[3.3rem] text-justify text-[20px] mx-[20px] prose-headings:text-[32px] prose-headings:my-8">
     <ContentRenderer v-if="articles" :value="articles">
       <template #empty>
         <p>No content found.</p>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { Font } from "~/types/font";
 import fonts from "~/data/fonts.json";
+import type { Font } from "~/types/font";
 
 const route = useRoute();
 const slug = route.params.slug as string;
@@ -36,10 +36,13 @@ const data = reactive<Font>({
 	link: font.link || "",
 });
 
+// Add missing reactive variables for template
+const text = ref("");
+const value = ref(data.size);
+
 definePageMeta({
 	layout: "default",
 });
-
 </script>
 
 <template>
@@ -50,7 +53,7 @@ definePageMeta({
 			<div class="pt-4">{{ data.urdu }}</div>
 
 			<a :href="data.link">
-				<p class="hover:scale-105 ease-in-out duration-500 flex items-center bg-[#1c2c28] text-[#ffff] p-2 mx-1.5 py-1 rounded-3xl"
+				<p class="hover:scale-105 ease-in-out duration-500 flex items-center bg-[#1c2c28] text-[#ffff] p-1.5 mx-1.5 py-0.5 rounded-none"
 					style="direction: ltr;">
 					<Icon name="lucide:arrow-down" size="24px"></Icon>
 					<div class="inter relative px-1 text-[19px] mehr">Download</div>
