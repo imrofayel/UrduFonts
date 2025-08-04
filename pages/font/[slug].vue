@@ -1,27 +1,83 @@
 <script setup lang="ts">
-
 import type { Font } from '~/types/font';
 
-const { path } = useRoute()
+const route = useRoute()
+const slug = route.params.slug as string
 
-const { data: articles, error } = await useAsyncData(`blog-post-${path}`, () => queryContent(path).findOne())
+// Simple function to convert title to slug format for matching
+const titleToSlug = (title: string): string => {
+  return title
+    .toLowerCase()
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
+    .trim()
+}
 
-if (error.value) navigateTo('/404')
+// Fetch fonts data directly
+let fontsData: Font[] = []
 
-const data = computed<Font>(() => {
-  return {
-    title: articles.value?.title || 'not available',
-    family: articles.value?.family || 'not available',
-    styles: articles.value?.styles || [],
-    size: articles.value?.size,
-    urdu: articles.value?.urdu || 'فوںٹ',
-    link: articles.value?.link || ''
+try {
+  console.log('Fetching fonts data...')
+  const response = await $fetch<Font[]>('/api/fonts')
+  
+  console.log('Raw API response:', response)
+  console.log('Response type:', typeof response)
+  console.log('Is array:', Array.isArray(response))
+  
+  if (Array.isArray(response)) {
+    fontsData = response
+    console.log('Successfully loaded', fontsData.length, 'fonts')
+  } else {
+    console.error('API returned non-array:', response)
+    throw createError({
+      statusCode: 500,
+      statusMessage: `Invalid API response - expected array, got ${typeof response}`
+    })
   }
+} catch (err) {
+  console.error('Error fetching fonts:', err)
+  throw createError({
+    statusCode: 500,
+    statusMessage: 'Failed to load fonts data'
+  })
+}
+
+if (fontsData.length === 0) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: 'No fonts available'
+  })
+}
+
+console.log(`Loaded ${fontsData.length} fonts`)
+console.log('Looking for slug:', slug)
+
+// Find font by converting each title to slug format and matching
+const font = fontsData.find(f => titleToSlug(f.title) === slug)
+
+if (!font) {
+  console.error('Font not found for slug:', slug)
+  console.error('Available slugs:', fontsData.map(f => titleToSlug(f.title)).slice(0, 10))
+  
+  throw createError({
+    statusCode: 404,
+    statusMessage: `Font not found for "${slug}"`
+  })
+}
+
+console.log('Successfully found font:', font.title)
+
+// Create reactive data object
+const data = reactive<Font>({
+  title: font.title || 'not available',
+  family: font.family || 'not available',
+  styles: font.styles || [],
+  size: font.size || 40,
+  urdu: font.urdu || 'فوںٹ',
+  link: font.link || ''
 })
 
 const text = ref('')
-
-const value = ref(Number(data.value.size))
+const value = ref(Number(data.size))
 
 definePageMeta({
   layout: 'default'
@@ -38,7 +94,6 @@ const urduAlphabets = ref([
 </script>
 
 <template>
-
   <div class="flex-col text-4xl mx-4 sm:mx-10 overflow-visible py-2 justify-between text-[#1a1c1e] space-y-8">
 
     <div class="flex justify-between items-center dark:text-[#ffff]">
@@ -97,8 +152,7 @@ const urduAlphabets = ref([
 
     <Alphabets :fontFamily="data.family" :fontSize="data.size"/>
 
-</div>
-
+  </div>
 </template>
 
 <style>
