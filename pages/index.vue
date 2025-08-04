@@ -1,18 +1,6 @@
 <script lang="ts" setup>
 import type { Font } from '~/types/font';
-
-// Fetch fonts data from API route with error handling
-const { data: fontsData, error } = await useAsyncData('home', () => $fetch<Font[]>('/api/fonts'), {
-  default: () => []
-})
-
-// Handle error state
-if (error.value) {
-  throw createError({
-    statusCode: 500,
-    statusMessage: 'Failed to load fonts data'
-  })
-}
+import fontsData from '~/data/fonts.json';
 
 const elementPerPage = ref(8) // Number of fonts per page
 const pageNumber = ref(1) // Current page number
@@ -24,7 +12,7 @@ const titleToSlug = (title: string): string => {
 
 const formattedData = computed(() => {
   // Ensure fontsData.value is an array before mapping
-  const fonts = fontsData.value || []
+  const fonts = fontsData || []
   if (!Array.isArray(fonts)) {
     console.error('Fonts data is not an array:', fonts)
     return []

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Font } from '~/types/font';
+import fonts from '~/data/fonts.json';
 
 const route = useRoute()
 const slug = route.params.slug as string
@@ -13,58 +14,17 @@ const titleToSlug = (title: string): string => {
 }
 
 // Fetch fonts data directly
-let fontsData: Font[] = []
-
-try {
-  console.log('Fetching fonts data...')
-  const response = await $fetch<Font[]>('/api/fonts')
-  
-  console.log('Raw API response:', response)
-  console.log('Response type:', typeof response)
-  console.log('Is array:', Array.isArray(response))
-  
-  if (Array.isArray(response)) {
-    fontsData = response
-    console.log('Successfully loaded', fontsData.length, 'fonts')
-  } else {
-    console.error('API returned non-array:', response)
-    throw createError({
-      statusCode: 500,
-      statusMessage: `Invalid API response - expected array, got ${typeof response}`
-    })
-  }
-} catch (err) {
-  console.error('Error fetching fonts:', err)
-  throw createError({
-    statusCode: 500,
-    statusMessage: 'Failed to load fonts data'
-  })
-}
-
-if (fontsData.length === 0) {
-  throw createError({
-    statusCode: 500,
-    statusMessage: 'No fonts available'
-  })
-}
-
-console.log(`Loaded ${fontsData.length} fonts`)
-console.log('Looking for slug:', slug)
+let fontsData: Font[] = fonts
 
 // Find font by converting each title to slug format and matching
 const font = fontsData.find(f => titleToSlug(f.title) === slug)
 
 if (!font) {
-  console.error('Font not found for slug:', slug)
-  console.error('Available slugs:', fontsData.map(f => titleToSlug(f.title)).slice(0, 10))
-  
   throw createError({
     statusCode: 404,
     statusMessage: `Font not found for "${slug}"`
   })
 }
-
-console.log('Successfully found font:', font.title)
 
 // Create reactive data object
 const data = reactive<Font>({
