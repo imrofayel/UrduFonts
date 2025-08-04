@@ -8,7 +8,7 @@
     </div>
 
     <Sidebar
-      class="sm:h-screen w-full flex fixed sm:sticky bottom-0 bg-green-50/90 backdrop-blur-xl sm:bottom-auto sm:top-0 sm:order-1 dark:bg-[#1c2c28bf]" />
+      class="sm:h-screen sm:w-fit w-full fixed sm:sticky bottom-0 bg-green-50/90 backdrop-blur-xl sm:bottom-auto sm:top-0 sm:order-1 dark:bg-[#1c2c28bf]" />
   </div>
 </template>
 
